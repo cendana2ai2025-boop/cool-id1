@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Luminous Architect - Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#005762",
+                        "on-secondary-fixed-variant": "#3a3ac8",
+                        "on-secondary-container": "#ccccff",
+                        "on-secondary": "#080079",
+                        "outline": "#777575",
+                        "on-primary-container": "#004d57",
+                        "on-tertiary": "#3d0047",
+                        "surface-bright": "#2c2c2c",
+                        "tertiary-container": "#de4bf4",
+                        "secondary": "#9093ff",
+                        "inverse-primary": "#006976",
+                        "tertiary": "#ec63ff",
+                        "secondary-fixed": "#cdcdff",
+                        "on-primary": "#005762",
+                        "surface": "#0e0e0e",
+                        "on-tertiary-fixed-variant": "#660075",
+                        "error-container": "#a70138",
+                        "tertiary-fixed": "#f487ff",
+                        "on-primary-fixed": "#003840",
+                        "on-surface-variant": "#adaaaa",
+                        "on-surface": "#ffffff",
+                        "secondary-dim": "#6063ee",
+                        "secondary-container": "#2f2ebe",
+                        "on-background": "#ffffff",
+                        "background": "#0e0e0e",
+                        "inverse-surface": "#fcf8f8",
+                        "outline-variant": "#494847",
+                        "inverse-on-surface": "#565554",
+                        "error": "#ff6e84",
+                        "on-tertiary-fixed": "#300038",
+                        "on-tertiary-container": "#19001e",
+                        "surface-tint": "#81ecff",
+                        "surface-container-low": "#131313",
+                        "on-error-container": "#ffb2b9",
+                        "on-error": "#490013",
+                        "secondary-fixed-dim": "#bdbeff",
+                        "tertiary-fixed-dim": "#ef6eff",
+                        "surface-container": "#1a1919",
+                        "primary-container": "#00e3fd",
+                        "surface-variant": "#262626",
+                        "primary-fixed-dim": "#00d4ec",
+                        "surface-container-high": "#201f1f",
+                        "primary": "#81ecff",
+                        "error-dim": "#d73357",
+                        "surface-container-lowest": "#000000",
+                        "primary-fixed": "#00e3fd",
+                        "surface-dim": "#0e0e0e",
+                        "on-secondary-fixed": "#160bae",
+                        "primary-dim": "#00d4ec",
+                        "surface-container-highest": "#262626",
+                        "tertiary-dim": "#ec63ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
+                            "Manrope", "sans-serif"
+                        ],
+                        "body": [
+                            "Inter", "sans-serif"
+                        ],
+                        "label": [
+                            "Inter", "sans-serif"
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+        }
+        .aurora-mesh {
+            background-color: #0e0e0e;
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(129, 236, 255, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(144, 147, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(236, 99, 255, 0.1) 0%, transparent 50%);
+        }
+        .glass-card {
+            background-color: rgba(38, 38, 38, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(0, 227, 253, 0.2);
+            box-shadow: 0 20px 60px -10px rgba(129, 236, 255, 0.06);
+        }
+        .ghost-border {
+            border: 1px solid rgba(73, 72, 71, 0.15);
+        }
+        .aurora-button {
+            background: linear-gradient(135deg, #81ecff 0%, #9093ff 100%);
+            color: #005762;
+            transition: all 300ms cubic-bezier(0.2, 0, 0, 1);
+        }
+        .aurora-button:hover {
+            box-shadow: 0 0 15px rgba(129, 236, 255, 0.5);
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 60px rgba(129, 236, 255, 0.06);
+        }
+    </style>
+</head>
+<body class="font-body antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Web) -->
+<nav class="hidden md:flex fixed top-0 w-full z-50 justify-between items-center px-12 py-6 bg-zinc-950/60 backdrop-blur-2xl font-['Manrope'] font-medium tracking-tight border-b border-white/5 shadow-[0_20px_50px_rgba(129,236,255,0.06)]">
+<div class="text-2xl font-black tracking-tighter text-white">LUMINOUS</div>
+<div class="flex gap-8">
+<a class="text-zinc-400 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-1 rounded" href="#">Home</a>
+<a class="text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1 px-3 py-1" href="#">Projects</a>
+<a class="text-zinc-400 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-1 rounded" href="#">Studio</a>
+<a class="text-zinc-400 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-1 rounded" href="#">Journal</a>
+</div>
+<div class="flex gap-4">
+<button class="text-cyan-400 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</nav>
+<!-- SideNavBar (Mobile Fallback Concept - typically bottom nav on mobile, but respecting JSON constraints for side nav if needed, though web is primary here) -->
+<div class="md:hidden fixed left-0 top-0 h-full py-12 flex flex-col justify-between z-40 bg-zinc-950/80 backdrop-blur-3xl h-screen w-24 flex flex-col items-center left-0 border-r border-white/5 no-shadows">
+<div class="text-white font-black text-xl mb-8 -rotate-90 origin-center tracking-tighter">LUMINOUS</div>
+<div class="flex flex-col gap-8 font-['Inter'] text-sm tracking-wide uppercase">
+<a class="flex flex-col items-center gap-2 text-zinc-500 p-3 hover:text-white hover:scale-110 transition-transform cubic-bezier(0.2, 0, 0, 1) duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="deployed_code">deployed_code</span>
+<span class="text-[10px]">Work</span>
+</a>
+<a class="flex flex-col items-center gap-2 bg-gradient-to-br from-cyan-400 to-indigo-500 text-zinc-950 rounded-full p-3 hover:scale-110 transition-transform cubic-bezier(0.2, 0, 0, 1) duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="text-[10px] font-bold">Stack</span>
+</a>
+<a class="flex flex-col items-center gap-2 text-zinc-500 p-3 hover:text-white hover:scale-110 transition-transform cubic-bezier(0.2, 0, 0, 1) duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="text-[10px]">Archive</span>
+</a>
+<a class="flex flex-col items-center gap-2 text-zinc-500 p-3 hover:text-white hover:scale-110 transition-transform cubic-bezier(0.2, 0, 0, 1) duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="text-[10px]">Resume</span>
+</a>
+</div>
+<div class="mt-8 flex flex-col items-center gap-2">
+<img alt="Developer Profile" class="w-10 h-10 rounded-full mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUiGsD-bPf63MDNBPx3wOe5Nmrh4xXpox2vmdpxjp05wQIwgOqut8rRZzmwnL5Aq9qhQdkVznLqoMiMpQPWI0NOeWPKNoZz_6AJXHKhT1j1o5OS_bkf-omydvDfEGbfijiSgNhm5dmwgSaZD6X1cs05hXPOlmDsl9ZWn1CY2S2QCyJLnfz1_-Cr20rHQK0zPLz4Y4io1yxYocdFOYCRY_Bp07WaVvj1CYxAS1DcX3SMr8o8JHDcZeT4Ljqk0mPyL5zAqAjbgD-20u7"/>
+</div>
+</div>
+<!-- Main Canvas -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-24 md:pl-32 lg:px-48 xl:px-64 aurora-mesh min-h-screen">
+<!-- Header Section -->
+<header class="mb-24 md:mb-32">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+<div class="max-w-3xl">
+<h1 class="font-headline text-display-lg font-extrabold tracking-[-0.02em] text-on-surface mb-6 leading-tight">
+                        Engineered <br/> Atmospheres.
+                    </h1>
+<p class="font-body text-body-lg text-on-surface-variant max-w-xl">
+                        A curated selection of high-fidelity applications, developer tools, and architectural explorations built with precision.
+                    </p>
+</div>
+<div class="flex gap-4 flex-wrap">
+<button class="bg-surface-variant text-on-surface px-6 py-3 rounded-full font-label text-label-md ghost-border hover:bg-surface-container-high transition-colors">All</button>
+<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-full font-label text-label-md ghost-border ambient-shadow">Web Apps</button>
+<button class="bg-surface-variant text-on-surface px-6 py-3 rounded-full font-label text-label-md ghost-border hover:bg-surface-container-high transition-colors">Mobile</button>
+<button class="bg-surface-variant text-on-surface px-6 py-3 rounded-full font-label text-label-md ghost-border hover:bg-surface-container-high transition-colors">Cloud Tools</button>
+</div>
+</div>
+</header>
+<!-- Gallery Grid (Bento style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+<!-- Featured Card (Large) -->
+<article class="glass-card rounded-xl p-8 md:col-span-2 lg:col-span-2 flex flex-col justify-between group overflow-hidden relative min-h-[400px]">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-20 transition-transform duration-700 group-hover:scale-105" data-alt="abstract dark coding environment with glowing neon syntax highlighting"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="relative z-10 flex justify-between items-start mb-12">
+<div class="bg-surface-variant text-on-surface px-3 py-1 rounded-sm font-label text-label-sm uppercase tracking-wider ghost-border">Web Platform</div>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform duration-300" data-icon="arrow_outward">arrow_outward</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4">Nexus Query Engine</h2>
+<p class="font-body text-body-lg text-on-surface-variant mb-8 max-w-lg">A distributed, high-performance GraphQL federation gateway built for enterprise microservices.</p>
+<div class="flex gap-3">
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">TypeScript</span>
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">Rust</span>
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">GraphQL</span>
+</div>
+</div>
+</article>
+<!-- Standard Card -->
+<article class="glass-card rounded-xl p-8 flex flex-col justify-between group relative overflow-hidden min-h-[400px]">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&amp;w=1964&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-10 transition-transform duration-700 group-hover:scale-105" data-alt="sleek modern mobile phone wireframe glowing in dark void"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="relative z-10 flex justify-between items-start mb-12">
+<div class="bg-surface-variant text-on-surface px-3 py-1 rounded-sm font-label text-label-sm uppercase tracking-wider ghost-border">Mobile</div>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform duration-300" data-icon="arrow_outward">arrow_outward</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-2xl font-bold text-on-surface mb-4">Aura Sync</h2>
+<p class="font-body text-body-lg text-on-surface-variant mb-8">Ambient background synchronization protocol for iOS, designed for zero-drain data fetching.</p>
+<div class="flex gap-3 flex-wrap">
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">SwiftUI</span>
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">CoreData</span>
+</div>
+</div>
+</article>
+<!-- Standard Card -->
+<article class="glass-card rounded-xl p-8 flex flex-col justify-between group relative overflow-hidden min-h-[400px]">
+<div class="absolute inset-0 bg-gradient-to-br from-surface-container to-surface-container-lowest opacity-50"></div>
+<div class="relative z-10 flex justify-between items-start mb-12">
+<div class="bg-surface-variant text-on-surface px-3 py-1 rounded-sm font-label text-label-sm uppercase tracking-wider ghost-border">Cloud Tool</div>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform duration-300" data-icon="arrow_outward">arrow_outward</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-2xl font-bold text-on-surface mb-4">Void Deploy</h2>
+<p class="font-body text-body-lg text-on-surface-variant mb-8">Serverless deployment orchestrator that maps multi-cloud infrastructure via YAML topologies.</p>
+<div class="flex gap-3 flex-wrap">
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">Go</span>
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">Terraform</span>
+</div>
+</div>
+</article>
+<!-- Featured Card (Large) -->
+<article class="glass-card rounded-xl p-8 md:col-span-2 lg:col-span-2 flex flex-col justify-between group overflow-hidden relative min-h-[400px]">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-15 transition-transform duration-700 group-hover:scale-105" data-alt="cyberpunk inspired dark server room with vibrant magenta and cyan lights"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="relative z-10 flex justify-between items-start mb-12">
+<div class="bg-surface-variant text-on-surface px-3 py-1 rounded-sm font-label text-label-sm uppercase tracking-wider ghost-border">Web Application</div>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform duration-300" data-icon="arrow_outward">arrow_outward</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4">Lumina Analytics</h2>
+<p class="font-body text-body-lg text-on-surface-variant mb-8 max-w-lg">Real-time data visualization dashboard rendering millions of points in WebGL without frame drops.</p>
+<div class="flex gap-3">
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">React</span>
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">Three.js</span>
+<span class="bg-surface text-on-surface-variant px-3 py-1 rounded-sm font-label text-label-sm ghost-border">WebSockets</span>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-950 full-width py-16 text-cyan-400 font-['Inter'] text-[10px] tracking-[0.2em] uppercase">
+<div class="bg-gradient-to-r from-transparent via-zinc-800 to-transparent h-[1px] w-full mb-16"></div>
+<div class="max-w-7xl mx-auto px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-zinc-600">
+                © 2024 THE LUMINOUS ARCHITECT. BUILT WITH PRECISION.
+            </div>
+<div class="flex gap-6">
+<a class="text-zinc-600 hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="text-zinc-600 hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-zinc-600 hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="text-zinc-600 hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">Dribbble</a>
+</div>
+</div>
+</footer>
+</body></html>
