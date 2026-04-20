@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Home - Luminous Architect</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-black text-white font-sans">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full flex justify-between px-10 py-5 bg-black/70 backdrop-blur">
+<div class="font-bold text-xl">LUMINOUS</div>
+
+<div class="flex gap-6">
+<a href="home.html" class="text-cyan-400 font-bold">Home</a>
+<a href="project.html">Projects</a>
+<a href="journal.html">Journal</a>
+<a href="privacy.html">Privacy</a>
+</div>
+
+<button id="darkToggle">🌙</button>
+</nav>
+
+<!-- HERO -->
+<section class="h-screen flex flex-col justify-center items-center text-center">
+<h1 class="text-5xl font-bold mb-6">Future of Code</h1>
+<p class="text-gray-400">High performance developer portfolio</p>
+
+<a href="project.html" class="mt-6 bg-cyan-400 text-black px-6 py-3 rounded-full">
+Explore Work
+</a>
+</section>
+
+<script>
+document.getElementById("darkToggle").onclick = () => {
+document.documentElement.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
